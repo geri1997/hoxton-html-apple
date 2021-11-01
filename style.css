@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow-x: hidden;
+}
+
+/* header */
+header{
+    background: #333333;
+    
+}
+nav{
+    display: grid;
+    place-items: center;
+    color: #eeeded;
+    height: auto;
+}
+
+nav ul {
+
+    display: grid;
+    list-style: none;
+    place-items: center;
+    grid-template-columns: repeat(13,auto);
+    column-gap: 2.3rem;
+    font-size: 14px;
+}
+
+/* End of header */
+
+
+/* Main */
+/* Section 1 */
+main{
+    overflow: hidden;
+}
+main p{
+    text-align: center;
+    padding: 0.7rem 0;
+    background-color: #f5f5f7;
+    line-height: 2rem;
+}
+main section.s1{
+    overflow: hidden;
+    position: relative;
+    background-image: url("https://www.apple.com/v/home/ag/images/heroes/iphone-13-pro/hero_iphone_13pro__dhnsegysa42u_large.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 2rem;
+    height: 85vh;
+    display: grid;
+    justify-content: center;
+   
+    align-content: flex-start;
+}
+main section.s1 div.links{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    column-gap: 2rem;
+}
+main section.s1 div.links a{
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #f9caeb;
+    font-size: 21px;
+    font-weight: bold;
+}
+main section.s1 figure{
+    position: absolute;
+   transform: translate(-25%);
+   overflow: hidden;
+    z-index: -3;
+    
+}
+h2{
+    font-size: 56px;
+    font-weight: 800;
+}
+h3{
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+}
+
+/* End of Section 1 */
+
+/* Section 2 */
+section.s2{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 720px;
+    background-image: url("https://www.apple.com/v/home/ag/images/heroes/iphone-13/hero_iphone_13__f194u1rdooeq_large.jpg");
+}
+
+
+section.s2 h2{
+    color: white;
+    text-align: center;
+    font-weight: 900;
+    margin-top: 4rem;
+    letter-spacing: 0.1rem;
+
+}
+section.s2 h3{
+    color: #faabe2;
+}
+section.s2 div.link-s2 a{
+    color: #2997ff;
+    font-size: 21px;
+    font-weight: 900;
+    padding: 0 2rem;
+    text-decoration: none;
+}
+section.s2 div.link-s2{
+    padding: 2rem 0;
+text-align: center;
+
+}
+
+/* End of section 2 */
+
+/* Section 3 */
+
+section.s3{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 720px;
+    background-image: url("https://www.apple.com/v/home/ag/images/heroes/macbook-pro/hero_macbookpro__eatonjfwvuc2_largetall.jpg");
+}
+
+
+section.s3 h2{
+    color: black;
+    text-align: center;
+    font-weight: 900;
+    margin-top: 4rem;
+    letter-spacing: 0.1rem;
+
+}
+section.s3 h3{
+    color: black;
+}
+section.s3 div.link-s3 a{
+    color: #faabe2;
+    font-size: 21px;
+    font-weight: 900;
+    padding: 0 2rem;
+    text-decoration: none;
+}
+section.s3 div.link-s3{
+    padding: 2rem 0;
+text-align: center;
+
+}
+
+/* End of Section 3 */
+
+/* Section 4 */
+
+section.s4{
+    margin: 0.7rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+}
+
+section.s4-1{
+    background-image: url("https://www.apple.com/v/home/ag/images/promos/airpods/tile_airpods__fuv6vgn42y2q_large.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 636px;
+    display: grid;
+    justify-content: center;
+    align-content: flex-end;
+}
+section.s4-1 h2{
+    text-align: center;
+    font-weight: 900;
+}
+
+section.s4-1 div{
+    text-align: center;
+    margin: 1rem 0;
+}
+section.s4-1 div a{
+    color: #f9c2e9;
+    text-decoration: none;
+    margin: 0 2rem;
+    font-size: 21px;
+    font-weight: 900;
+}
+
+
+section.s4-2{
+    background-image: url("https://www.apple.com/v/home/ag/images/promos/watch-series-7/tile_watch__e9n11b6m6yq2_large.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 636px;
+    display: grid;
+    justify-content: center;
+    align-content: flex-start;
+}
+section.s4-2 div{
+    text-align: center;
+    margin: 1rem 0;
+}
+section.s4-2 div a{
+    color: #f9c2e9;
+    text-decoration: none;
+    margin: 0 2rem;
+    font-size: 21px;
+    font-weight: 900;
+}
+
+
+section.s4-2 span{
+    margin-top: 2rem;
+    color: #d86a2a;
+    font-weight: 900;
+    justify-self: center;
+}
+section.s4-2 h2{
+    height: 56px;
+    margin: 1rem 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-self: center;
+    width: 150px;
+    background-image: url("https://www.apple.com/v/home/ag/images/logos/watch-series-7/tile_watch_logo_lte__h7snssb7mqq2_large.png");
+}
+
+section.s4-3{
+    background-image: url("https://www.apple.com/v/home/ag/images/promos/homepod-mini/tile_homepod_mini__b73w4z3ljymu_large.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 636px;
+    display: grid;
+    justify-content: center;
+    align-content: flex-start;
+}
+section.s4-3 h2{
+    justify-self: center;
+    font-weight: 900;
+    font-size: 50px;
+}
+section.s4-3 p{
+    justify-self: center;
+    font-weight: 900;
+    color: #b9b9bd;
+    background-color: white;
+}
+section.s4-3 div a{
+    color: #f9c2e9;
+    text-decoration: none;
+    margin: 0 2rem;
+    font-size: 21px;
+    font-weight: 900;
+}
+
+section.s4-4{
+    background-image: url("https://www.apple.com/v/home/ag/images/promos/ipad-mini/promo_ipad_mini__spq4zjcuuaie_large.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 636px;
+    display: grid;
+    justify-content: center;
+    align-content: flex-start;
+}
+section.s4-4 h2{
+    height: 40px;
+    margin: 1rem 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-self: center;
+    width: 200px;
+    background-image: url("https://www.apple.com/v/home/ag/images/logos/ipad-mini/promo_logo_ipad_mini__n5nqff6gq8yu_large.png");
+}
+section.s4-4 h3{
+    text-align: center;
+    justify-self: center;
+    margin-bottom: 2rem;
+}
+section.s4-4 div a{
+    color: #f9c2e9;
+    text-decoration: none;
+    margin: 0 2rem;
+    font-size: 21px;
+    font-weight: 900;
+}
+
+section.s4-5{
+    background-image: url("https://www.apple.com/v/home/ag/images/promos/apple-card/tile__cauwwcyyn9hy_large.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 636px;
+    display: grid;
+    justify-content: center;
+    align-content: flex-start;
+}
+section.s4-5 h2{
+    height: 37px;
+    margin: 1rem 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-self: center;
+    width: 135px;
+    background-image: url("https://www.apple.com/v/home/ag/images/logos/apple-card/logo__dcojfwkzna2q_large.png");
+}
+section.s4-5 h3{
+    text-align: center;
+    width: 300px;
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+}
+
+section.s4-5 div a{
+    color: #f9c2e9;
+    text-decoration: none;
+    margin: 0 1.7rem;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+section.s4-6{
+    background-image: url("https://www.apple.com/v/home/ag/images/promos/tv-plus-charlie-brown-halloween/tile_charliebrown__eolk1igxqpw2_large.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 636px;
+    display: grid;
+    justify-content: center;
+    align-content: flex-end;
+}
+section.s4-6 h2:first-of-type{
+    background-image: url("https://www.apple.com/v/home/ag/images/logos/tv-plus/logo__dcojfwkzna2q_large.png");
+    height: 27px;
+    margin-bottom: 20rem;
+    background-repeat: no-repeat;
+    background-size: 68px 27px;
+    justify-self: center;
+   
+    width: 68px;
+}
+section.s4-6 h2:nth-of-type(2){
+    height: 93px;
+    margin: 1rem 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-self: center;
+    width: 313px;
+    background-image: url("https://www.apple.com/v/home/ag/images/logos/tv-plus-charlie-brown-halloween/logo_charliebrown__e10f7oj0okom_large.png");
+}
+
+section.s4-6 h3{
+    font-size: 19px;
+}
+section.s4-6 div.link-s4-6{
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    height: 25px;
+
+
+}
+
+section.s4-6 .link-s4-6 a{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+
+    
+}
+
+section.s4-6 .link-s4-6 a img{
+width: 20px;
+}
+
+footer{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    
+}
+.foot1{
+    width: 70vw;
+}
+.foot1 p{
+    margin: 1rem;
+}
