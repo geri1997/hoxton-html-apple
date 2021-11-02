@@ -11,7 +11,11 @@
     color: #eeeded9c;
 } */
 
+body{
+    
+    min-width: 325px;
 
+}
 /* header */
 header{
     background: #333333;
@@ -78,8 +82,8 @@ main section.s1{
     background-image: url("https://www.apple.com/v/home/ag/images/heroes/iphone-13-pro/hero_iphone_13pro__dhnsegysa42u_large.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    margin-top: 2rem;
-    height: 85vh;
+    
+    height: 647px;
     display: grid;
     justify-content: center;
    
@@ -103,6 +107,9 @@ main section.s1 div.links a{
     font-size: 21px;
     font-weight: bold;
 }
+main section.s1 h2{
+    margin-top: 1rem;
+}
 main section.s1 div.links a:hover{
     text-decoration: underline;
 }
@@ -119,7 +126,7 @@ h3{
 .overlay{
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-color: rgba(255, 0, 0, 0);
     position: absolute;
     
@@ -135,6 +142,7 @@ section.s2{
     background-repeat: no-repeat;
     overflow: hidden;
     min-height: 720px;
+    margin-top: 1rem;
     background-image: url("https://www.apple.com/v/home/ag/images/heroes/iphone-13/hero_iphone_13__f194u1rdooeq_large.jpg");
 }
 
@@ -228,7 +236,7 @@ section.s4{
     margin: 0.7rem;
     display: grid;
     gap: 2rem;
-    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+    grid-template-columns: minmax(550px, 1fr) minmax(550px, 1fr);
 }
 
 section.s4-1{
@@ -498,7 +506,8 @@ footer{
     
 }
 .foot1{
-    width: 70vw;
+    min-width: 350px;
+    max-width: 70vw;
 }
 .foot1 p{
     margin: 1rem;
@@ -573,7 +582,17 @@ footer ul.legal a{
 footer ul.legal a:hover{
     text-decoration: underline;
 }
-
+@media screen and (max-width: 1200px) {
+    section.s4{
+        grid-template-columns: 1fr;
+    }
+}
+/* @media screen and (max-width: 1100px) {
+    section.s4-2 {
+        height: 400px;
+        background-image: url(https://www.apple.com/v/home/ag/images/promos/watch-series-7/tile_watch__e9n11b6m6yq2_medium.jpg);
+    }
+} */
 @media screen and (max-width: 1000px) {
 
     header nav ul li{
@@ -589,6 +608,9 @@ footer ul.legal a:hover{
         display: block;
         justify-self: start;
         margin-left: 0.5rem;
+    }
+    main section.s1{
+        height: 547px;
     }
     header nav ul li.burger img{
         display: block;
@@ -610,4 +632,39 @@ footer ul.legal a:hover{
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+}
+
+@media screen and (max-width: 750px) {
+    main section.s2{
+        display: grid;
+        place-content: center;
+        background-image: url("https://www.apple.com/v/home/ag/images/heroes/iphone-13/hero_iphone_13__f194u1rdooeq_small.jpg");
+    }
+    footer ul.legal{
+        display: grid;
+        grid-template-columns: auto;
+        
+    }
+    footer ul.legal li:last-of-type{
+        justify-self: unset;
+    }
+
+    main section.s1{
+        height: 500px;
+        background-image: url(https://www.apple.com/v/home/ag/images/heroes/iphone-13-pro/hero_iphone_13pro__dhnsegysa42u_small.jpg
+        );
+    }
+    main section.s3{
+        background-image: url(https://www.apple.com/v/home/ag/images/heroes/macbook-pro/hero_macbookpro__eatonjfwvuc2_small_2x.jpg
+        );
+    }
+    section.s4-2{
+        background-image: url(https://www.apple.com/v/home/ag/images/promos/watch-series-7/tile_watch__e9n11b6m6yq2_small_2x.jpg);
+    }
+    section.s4-1{
+        background-image: url(https://www.apple.com/v/home/ag/images/promos/airpods/tile_airpods__fuv6vgn42y2q_small_2x.jpg);
+    }
+    section.s4-3{
+        background-image: url(https://www.apple.com/v/home/ag/images/promos/homepod-mini/tile_homepod_mini__b73w4z3ljymu_small_2x.jpg);
+    }
 }
